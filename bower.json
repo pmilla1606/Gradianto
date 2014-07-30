@@ -1,0 +1,10 @@
+{
+  "name": "gradianto",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "~1.11.0",
+    "rainbow":"latest"
+  },
+  "devDependencies": {}
+}
