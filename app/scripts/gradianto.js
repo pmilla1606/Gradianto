@@ -47,9 +47,7 @@
 
             var currentOpacity;
             var p = p + (1/elems.length);
-            
-            console.log(op);
-            
+
             // gradient directions setup
             var currentRgb = {
                 'R': Math.round(startRgb.R * p + endRgb.R * (1-p)),
