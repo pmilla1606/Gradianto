@@ -7,6 +7,23 @@ $('document').ready(function(){
     };
     $('.jumbo-gradianto-wrap').gradianto(jumboOptions);
 
+    var dynamicOptions = {
+        'startColor': '2ecc71',
+        'endColor':'f1c40f'
+    };
+    $('.gradianto.dynamic').gradianto(dynamicOptions);
+
+    $('button.inc').on('click', function(){
+        $('.gradianto.dynamic').append('<li class="list-group-item">More!</li>');
+        $('.gradianto.dynamic').gradianto(dynamicOptions);
+    });
+    $('button.dec').on('click', function(){
+        $('.gradianto.dynamic li:last-child').remove();
+        $('.gradianto.dynamic').gradianto(dynamicOptions);
+    });    
+
+
+
     // examples
     $('.gradianto.one').gradianto();
     var optionsTwo = {
